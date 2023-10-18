@@ -16,7 +16,7 @@ server.use(
   })
 );
 server.use(router);
-server.listen(5174, () => {
+server.listen(process.env.SERVER_PORT || 5174, () => {
   console.log('JSON Server is running');
 });
 

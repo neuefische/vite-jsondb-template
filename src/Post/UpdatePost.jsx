@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { getPost, updatePost, deletePost } from '../api';
+import { getPost, updatePost, deletePost } from './api';
 import { useParams, useNavigate } from 'react-router-dom';
-import Form from './Form';
+import PostForm from './PostForm';
 
 export default function UpdatePost() {
   const navigate = useNavigate();
@@ -46,7 +46,7 @@ export default function UpdatePost() {
         <Link to="/">Back to the Homepage</Link>
       </nav>
       <h1>Edit Post</h1>
-      <Form post={post} onSubmit={onSubmit} />
+      <PostForm post={post} onSubmit={onSubmit} />
       <button className="action" onClick={onDelete}>
         Delete Post
       </button>

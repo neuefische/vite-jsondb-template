@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { getPosts } from './api';
+import { getPosts } from './Post/api';
 
 function Homepage() {
   const [posts, setPosts] = useState(null);

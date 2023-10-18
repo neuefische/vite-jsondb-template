@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { getPost } from '../api';
+import { getPost } from './api';
 import { useParams } from 'react-router-dom';
 
 export default function ViewPost() {

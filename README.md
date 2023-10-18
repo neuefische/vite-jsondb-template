@@ -9,9 +9,10 @@
 - [x] [deploys on Vercel](https://vite-jsondb-template.vercel.app/)
 - [x] Vite + React Router
 - [x] no mongoDB / mongoose / atlas / compass
-- [x] no next.js / indexjggeddon
+- [x] [allows for data relationships](https://github.com/typicode/json-server#relationships)
+- [x] no next.js / indexJSgeddon
 - [x] no SWR
-- [x] makes it easy to have data available from day 0
+- [x] work with `fetch` from day 1
 
 ## Copyright
 

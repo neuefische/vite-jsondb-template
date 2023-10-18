@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import { createPost } from '../api';
+import { createPost } from './api';
 import { useNavigate } from 'react-router-dom';
-import Form from './Form';
+import PostForm from './PostForm';
 
 export default function CreatePost() {
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ export default function CreatePost() {
         <Link to="/">Back to the Homepage</Link>
       </nav>
       <h1>Create Post</h1>
-      <Form onSubmit={onSubmit} />
+      <PostForm onSubmit={onSubmit} />
     </>
   );
 }
