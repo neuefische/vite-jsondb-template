@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getPosts } from './api';
-import './Homepage.css';
 
 function Homepage() {
   const [data, setData] = useState(null);
@@ -24,7 +23,7 @@ function Homepage() {
           <ul className="posts">
             {data.map(({ id, title, author }) => (
               <li key={id}>
-                <strong>{author}</strong> -
+                <strong>{author}</strong> /{' '}
                 <Link to={`/posts/${id}`}>{title}</Link>
               </li>
             ))}

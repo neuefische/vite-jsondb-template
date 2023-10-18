@@ -1,8 +1,18 @@
-# React + Vite
+# React + Vite + JSONdb example
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Get a full fake REST API with zero coding in less than 30 seconds (seriously)
 
-Currently, two official plugins are available:
+[json-server](https://github.com/typicode/json-server)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Reasons
+
+- [x] [deploys on Vercel](https://vite-jsondb-template.vercel.app/)
+- [x] Vite + React Router
+- [x] no mongoDB / mongoose / atlas / compass
+- [x] no next.js / indexjggeddon
+- [x] no SWR
+- [x] makes it easy to have data available from day 0
+
+## Copyright
+
+(c) 2023 ACME.
