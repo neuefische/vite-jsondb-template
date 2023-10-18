@@ -5,7 +5,6 @@ import { useParams } from 'react-router-dom';
 
 export default function ViewPost() {
   const { id } = useParams();
-
   const [post, setPost] = useState(null);
 
   useEffect(() => {

@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { getPosts } from './api';
 
 function Homepage() {
-  const [data, setData] = useState(null);
+  const [posts, setPosts] = useState(null);
 
   useEffect(() => {
-    getPosts().then(setData);
+    getPosts().then(setPosts);
   }, []);
 
   return (
@@ -15,19 +15,23 @@ function Homepage() {
       <Link className="action" to="/posts/new">
         Create New Post
       </Link>
-      {!data ? (
+      {!posts ? (
         'Loading...'
       ) : (
         <section>
           <h2>Recent Posts</h2>
-          <ul className="posts">
-            {data.map(({ id, title, author }) => (
-              <li key={id}>
-                <strong>{author}</strong> /{' '}
-                <Link to={`/posts/${id}`}>{title}</Link>
-              </li>
-            ))}
-          </ul>
+          {!posts.length ? (
+            <p>No posts yet.</p>
+          ) : (
+            <ul className="posts">
+              {posts.map(({ id, title, author }) => (
+                <li key={id}>
+                  <strong>{author}</strong> /{' '}
+                  <Link to={`/posts/${id}`}>{title}</Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </section>
       )}
     </>

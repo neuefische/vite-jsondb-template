@@ -7,7 +7,6 @@ import Form from './Form';
 export default function UpdatePost() {
   const navigate = useNavigate();
   const { id } = useParams();
-
   const [post, setPost] = useState(null);
 
   useEffect(() => {
@@ -32,8 +31,13 @@ export default function UpdatePost() {
     if (!window.confirm('Are you sure?')) {
       return;
     }
-    await deletePost(id);
-    navigate('/');
+    try {
+      await deletePost(id);
+      navigate('/');
+    } catch (error) {
+      console.log(error);
+      alert('Error deleting post');
+    }
   }
 
   return (
