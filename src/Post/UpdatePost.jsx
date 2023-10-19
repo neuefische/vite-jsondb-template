@@ -14,7 +14,7 @@ export default function UpdatePost() {
   }, [id]);
 
   if (!post) {
-    return 'Loading...';
+    return <div className="loader">Loading...</div>;
   }
 
   async function onSubmit(data) {

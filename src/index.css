@@ -119,6 +119,13 @@ footer {
   gap: 0.5rem;
 }
 
+.loader {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

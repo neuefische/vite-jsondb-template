@@ -12,7 +12,7 @@ export default function ViewPost() {
   }, [id]);
 
   if (!post) {
-    return 'Loading...';
+    return <div className="loader">Loading...</div>;
   }
 
   const { title, author, content, cover } = post;

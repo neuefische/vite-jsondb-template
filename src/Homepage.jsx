@@ -16,7 +16,7 @@ function Homepage() {
         Create New Post
       </Link>
       {!posts ? (
-        'Loading...'
+        <div className="loader">Loading...</div>
       ) : (
         <section>
           <h2>Recent Posts</h2>
