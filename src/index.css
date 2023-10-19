@@ -96,9 +96,11 @@ footer {
 
 .posts .post-card img {
   max-width: 100%;
+  height: auto;
   border-radius: 0.5rem;
   transition: opacity 0.2s ease-in-out;
   aspect-ratio: 16/9;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .posts .post-card img:hover {

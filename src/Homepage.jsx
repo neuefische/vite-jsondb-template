@@ -29,7 +29,7 @@ function Homepage() {
                   <article className="post-card">
                     <strong>{author}</strong>
                     <Link to={`/posts/${id}`}>
-                      <img src={cover} alt={title} />
+                      <img src={cover} alt={title} height={450} width={800} />
                     </Link>
                     <Link to={`/posts/${id}`}>{title}</Link>
                   </article>
