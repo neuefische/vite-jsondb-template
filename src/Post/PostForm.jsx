@@ -28,6 +28,16 @@ export default function PostForm({ post = {}, onSubmit }) {
         />
       </label>
       <label>
+        Cover
+        <input
+          name="cover"
+          type="url"
+          required
+          placeholder="Enter the post cover"
+          defaultValue={post.cover}
+        />
+      </label>
+      <label>
         Content
         <textarea
           name="content"
