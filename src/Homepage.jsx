@@ -24,10 +24,15 @@ function Homepage() {
             <p>No posts yet.</p>
           ) : (
             <ul className="posts">
-              {posts.map(({ id, title, author }) => (
+              {posts.map(({ id, title, author, cover }) => (
                 <li key={id}>
-                  <strong>{author}</strong> /{' '}
-                  <Link to={`/posts/${id}`}>{title}</Link>
+                  <article className="post-card">
+                    <strong>{author}</strong>
+                    <Link to={`/posts/${id}`}>
+                      <img src={cover} alt={title} />
+                    </Link>
+                    <Link to={`/posts/${id}`}>{title}</Link>
+                  </article>
                 </li>
               ))}
             </ul>

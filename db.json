@@ -4,18 +4,21 @@
       "id": 1,
       "title": "Heaven Knows I am Miserable Now",
       "author": "Steven Patrick Morrissey",
+      "cover": "https://source.unsplash.com/collection/4324303/800x450?3",
       "content": "Bla bla bla"
     },
     {
       "id": 2,
       "title": "There Is a Light That Never Goes Out",
       "author": "Johnny Marr",
+      "cover": "https://source.unsplash.com/collection/4324303/800x450?4",
       "content": "Bla bla bla"
     },
     {
       "id": 3,
       "title": "Love Will Tear Us Apart",
       "author": "Ian Curtis",
+      "cover": "https://source.unsplash.com/collection/4324303/800x450?5",
       "content": "Bla bla bla"
     }
   ]

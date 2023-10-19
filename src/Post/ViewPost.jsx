@@ -15,7 +15,7 @@ export default function ViewPost() {
     return 'Loading...';
   }
 
-  const { title, author, content } = post;
+  const { title, author, content, cover } = post;
 
   return (
     <>
@@ -28,6 +28,7 @@ export default function ViewPost() {
         <p>
           written by <strong>{author}</strong>
         </p>
+        <img src={cover} alt={title} />
         <p>{content}</p>
       </article>
     </>
