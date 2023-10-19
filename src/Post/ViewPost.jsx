@@ -23,12 +23,12 @@ export default function ViewPost() {
         <Link to="/">Back to the Homepage</Link>
         <Link to={`/posts/${id}/edit`}>Edit Post</Link>
       </nav>
-      <article>
+      <article className="post">
         <h1>{title}</h1>
         <p>
           written by <strong>{author}</strong>
         </p>
-        <img src={cover} alt={title} />
+        <img src={cover} alt={title} height={450} width={800} />
         <p>{content}</p>
       </article>
     </>
