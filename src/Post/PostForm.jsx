@@ -1,4 +1,4 @@
-import './Form.css';
+import './PostForm.css';
 
 export default function PostForm({ post = {}, onSubmit }) {
   function _onSubmit(event) {
@@ -32,7 +32,7 @@ export default function PostForm({ post = {}, onSubmit }) {
         <textarea
           name="content"
           required
-          placeholder="Enter the post author"
+          placeholder="Write the post content"
           defaultValue={post.content}
         ></textarea>
       </label>
